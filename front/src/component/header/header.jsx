@@ -133,7 +133,10 @@ function Header() {
                         <li className="nav-list-item">
                             <a className="item-link" href="">(095)186-01-78</a>
                         </li>
-                        <Button textContentBtn={'Записатись'} />
+                        <Button
+                            textContentBtn={'Записатись'}
+                            onClick={openClick}
+                        />
                     </nav>
                 </div>
             </div>

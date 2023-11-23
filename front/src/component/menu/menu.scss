@@ -21,7 +21,7 @@
     display: none;
     border-radius: 20px;
     text-align: center;
-    width: 500px;
+    max-width: 500px;
     height: 500px;
     position: fixed;
     top: 50%;
@@ -67,6 +67,8 @@
             padding: 10px 15px;
             font-size: 25px;
             background-color: $ColorGrey;
+            width: 100%;
+            min-width: 300px;
 
             &:focus {
                 border: 2px solid $ColorGreen;
