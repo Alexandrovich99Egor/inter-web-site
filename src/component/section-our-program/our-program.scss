@@ -1,0 +1,10 @@
+@import '../varible.scss';
+
+.our-program {
+    min-height: calc(100vh - $HeaderHeigth);
+
+
+    p {
+        text-align: center;
+    }
+}

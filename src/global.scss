@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0px 15px 0px 15px;
+    margin: 0 auto;
+
+    @media (max-width: 1000px) {
+        max-width: 700px;
+
+    }
+
+    @media (max-width: 700px) {
+        max-width: 500px;
+
+    }
+
+}

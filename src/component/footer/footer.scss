@@ -1,0 +1,77 @@
+@import '../varible.scss';
+
+.footer {
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+
+
+    }
+
+    &__logo-item {
+        width: 120px;
+
+
+    }
+
+    &__nav-list {
+        text-align: center;
+        display: flex;
+        gap: 30px;
+
+
+        a {
+            font-size: 16px;
+            color: $ColorBlack;
+        }
+    }
+
+    &__social-content {
+        display: flex;
+        width: 30px;
+    }
+
+    &__copyrigth-content {
+        text-align: center;
+    }
+}
+
+@media (max-width:700px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap: 30px;
+        }
+
+        &__nav-list {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &__social {
+            display: flex;
+        }
+    }
+}
