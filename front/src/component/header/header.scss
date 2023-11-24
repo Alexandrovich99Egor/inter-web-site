@@ -18,15 +18,21 @@
 
     &__logo {
         width: 120px;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__contacts {
-
-
         .contacts__list {
             display: flex;
             flex-direction: column;
             gap: 10px;
+
+            @media (max-width:1200px) {
+                display: none;
+            }
         }
 
 

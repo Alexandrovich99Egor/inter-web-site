@@ -1,3 +1,10 @@
+import ImageHtml from '../image/html.png';
+import ImageCss from '../image/css.png';
+import ImageJS from '../image/js.png';
+import ImagePy from '../image/py.png';
+import ImageMySql from '../image/mysql.jpg'
+import ImageRoblox from '../image/roblox.jpeg'
+
 export const data = [
     {
         id: 1,
@@ -42,14 +49,5 @@ export const data = [
         image: ImageRoblox
 
     }
-      {
-        id: 5,
-        age: '6-9 клас',
-        title: 'Roblox',
-        discriotion: 'В айті - школі ми досліджуємо світ програмування за допомогою Роблокса! Тут ти зможеш створити власні ігри, додавати веселі функції та навіть розробляти свої власні історії.Забудь про границі - на Роблоксі можна втілити будь - які ідеї та зробити своє імя в світі розробників. Готуйся до захоплюючого подорожі у світ програмування!',
-        image: ImageRoblox
-
-    }
-
 
 ];

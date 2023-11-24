@@ -64,7 +64,7 @@ function Header() {
                             <Link className="item-link" to="/about-us">Про нас</Link>
                         </li>
                         <li className="nav-list-item">
-                            <Link to="/program">Наша програма</Link>
+                            <Link className="item-link" to="/program">Наша програма</Link>
                         </li>
 
                         <li className="nav-list-item">

@@ -3,8 +3,47 @@
 .our-program {
     min-height: calc(100vh - $HeaderHeigth);
 
+    &__container {
+        margin-top: 150px;
 
-    p {
-        text-align: center;
+        .title {
+            text-align: center;
+            font-size: 35px;
+        }
+
+
+
     }
+
+    &__tab {
+        margin-top: 100px;
+
+        .tab-content {
+            margin-top: 50px;
+
+            span {
+                p {
+                    font-size: 25px;
+                    font-weight: 800;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .tabs-content-hide {
+                font-size: 20px;
+                padding: 50px 10px;
+                background-color: $ColorGrey;
+                display: none;
+                transition: 1s;
+                border-bottom: 10px solid $ColorGreen;
+            }
+
+
+        }
+    }
+
+}
+
+.visible {
+    display: block !important;
 }

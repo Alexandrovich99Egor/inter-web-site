@@ -1,5 +1,5 @@
 import './info.scss';
-import React from "react";
+import { React, useState } from "react";
 import Slider from "../slider/slider.jsx";
 import ImageHtml from '../image/html.png';
 import ImageCss from '../image/css.png';
@@ -8,6 +8,7 @@ import ImagePy from '../image/py.png';
 import ImageMySql from '../image/mysql.jpg'
 import ImageRoblox from '../image/roblox.jpeg'
 import Button from '../button/button.jsx';
+import Menu from '../menu/menu.jsx';
 
 
 // data about program on school
@@ -63,9 +64,23 @@ const data = [
 
 
 function Info() {
+    const [open, setOpen] = useState(false);
+
+    const openClick = () => {
+        setOpen(true);
+    }
+
+    const closeClick = () => {
+        setOpen(false);
+    }
+
+
+
 
 
     return (
+
+
         <section className="section info">
             <div className="container info__container">
                 <h2 className="info__title">
@@ -87,6 +102,7 @@ function Info() {
                                 {item.discriotion}
                             </p>
                             <Button
+                                onClick={openClick}
                                 classNameBtn={'info__button-age'}
                                 textContentBtn={'Записатись'}
                             />
@@ -97,6 +113,7 @@ function Info() {
 
             </div>
 
+            <Menu PropsModal={open} PropsModalSet={closeClick} />
             <Slider dataSlider={data} />
         </section>
     )
