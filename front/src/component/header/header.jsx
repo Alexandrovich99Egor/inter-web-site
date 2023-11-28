@@ -68,10 +68,10 @@ function Header() {
                         </li>
 
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Наші учні</a>
+                            <Link className="item-link" to="/projects">Наші учні</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Батькам</a>
+                            <Link className="item-link" to="/for-parents">Батькам</Link>
                         </li>
                         <li className="nav-list-item">
                             <a className="item-link" href="">Відгуки</a>

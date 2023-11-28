@@ -1,0 +1,101 @@
+@import '../varible.scss';
+
+.program {
+    background-color: $ColorBackGround;
+
+
+    &__container {
+        padding-top: 150px;
+
+
+        .program__main {
+            display: flex;
+            gap: 40px;
+
+            .program__main-img {
+                max-width: 400px;
+            }
+
+            .program__sub-title {
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 35px;
+
+                h3 {
+                    color: $ColorGreen;
+                    font-weight: 900;
+                    text-align: center;
+                    font-size: 40px;
+                    margin-bottom: 50px;
+                    line-height: 60px;
+                }
+
+                span {
+                    font-size: 40px;
+                    color: $ColorGreen;
+                    font-weight: 900;
+                }
+
+            }
+
+            @media (max-width:1000px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .program__content {
+            margin-top: 100px;
+
+            .program__content-items:nth-child(2n) {
+                justify-content: flex-end;
+            }
+
+            .program__content-items {
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+                @media (max-width:500px) {
+                    flex-direction: column;
+                    text-align: center;
+
+                    h3 {
+                        text-align: center;
+                    }
+                }
+
+
+
+
+
+                .program__content-wrapp {
+                    h3 {
+                        margin-bottom: 50px;
+                        font-size: 40px;
+                        color: $ColorGreen;
+                        font-weight: 1000;
+
+                    }
+
+                    p {
+                        font-size: 20px;
+                        display: block;
+                        max-width: 600px;
+                        line-height: 30px;
+                    }
+
+                }
+
+                .program__content-image {
+                    max-width: 150px;
+                }
+
+
+
+            }
+
+        }
+    }
+}

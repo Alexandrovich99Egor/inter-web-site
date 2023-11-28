@@ -2,8 +2,15 @@ import ImageHtml from '../image/html.png';
 import ImageCss from '../image/css.png';
 import ImageJS from '../image/js.png';
 import ImagePy from '../image/py.png';
-import ImageMySql from '../image/mysql.jpg'
-import ImageRoblox from '../image/roblox.jpeg'
+import ImageMySql from '../image/mysqllogo.png'
+import ImageRoblox from '../image/roblox.png'
+import User1 from '../image/Mogilko-768x512.jpg';
+import User2 from '../image/Odrinskiy-768x535.jpg';
+import User3 from '../image/sofa-682x1024.jpg';
+
+
+
+
 
 export const data = [
     {
@@ -51,3 +58,26 @@ export const data = [
     }
 
 ];
+
+export const dataStudents = [
+    {
+        id: 1,
+        Name: 'Могилко Денис',
+        Image: User1,
+        Discriotion: ' мені 15 років і я живу і вчуся в місті Красноград, зараз активно вивчаю веб-програмування, працюю з мовою текстової розмітки HTML & CSS, створюю сайти за допомогою мови JS.'
+    },
+
+    {
+        id: 2,
+        Name: 'Одринський Богдан',
+        Image: User2,
+        Discriotion: 'мені 15 років я живу і вчуся в місті Краснограді/ Захоплююся вивченням мов програмування. Працюю і створюю сайти за допомогою мови текстової розмітки HTML & CSS і JS. Готовий взяти замовлення на розробку сайту.'
+    },
+
+    {
+        id: 3,
+        Name: 'Софія',
+        Image: User3,
+        Discriotion: ' Я опанувала HTML та такі мови програмування, як: JavaScript, CSS – почала вивчати Python. Вмію користуватися бібліотекою jQueri. Мої хоббі: програмування та малювання.'
+    }
+]
