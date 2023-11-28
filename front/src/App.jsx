@@ -8,15 +8,14 @@ import AboutUs from "./pages/aboutUs/aboutUs.jsx";
 import ProgramSchool from "./pages/programSchool/programSchool.jsx";
 import ForParents from "./pages/forParentsPage/forParents.jsx";
 import Projects from "./pages/projects/projects.jsx";
+import FeedBacks from "./pages/feedbacks/feedbacks.jsx";
 import Footer from "./component/footer/footer.jsx";
 // data import 
 import OurProgram from "./component/section-for-parents/forParents.jsx";
 import Slider from "./component/slider/slider.jsx";
 import ContactUs from "./component/contacts-us/contact-us";
-const data = [112, 12545, 12];
-<Slider
-  dataAnother={data}
-/>
+
+
 
 
 
@@ -32,7 +31,8 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/program" element={<ProgramSchool />} />
           <Route path="/for-parents" element={<ForParents />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />\
+          <Route path="/feedback" element={<FeedBacks />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
