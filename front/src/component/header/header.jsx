@@ -77,7 +77,7 @@ function Header() {
                             <a className="item-link" href="">Відгуки</a>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Контакти</a>
+                            <Link to="/contact-us" className="item-link" >Контакты</Link>
                         </li>
                     </ul>
                 </nav>

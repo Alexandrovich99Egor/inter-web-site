@@ -1,0 +1,29 @@
+@import "../varible.scss";
+
+
+
+.contact-us {
+  margin-top: 15px;
+  height: calc(100vh - $HeaderHeigth);
+
+  &__container {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+
+  &__title {
+    font-size: 35px;
+  }
+
+  &__social {
+    display: flex;
+
+    img {
+      width: 30px;
+    }
+  }
+
+}

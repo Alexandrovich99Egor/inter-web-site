@@ -10,6 +10,7 @@ import Footer from "./component/footer/footer.jsx";
 // data import 
 import OurProgram from "./component/section-our-program/our-program.jsx";
 import Slider from "./component/slider/slider.jsx";
+import ContactUs from "./component/contacts-us/contact-us";
 const data = [112, 12545, 12];
 <Slider
   dataAnother={data}
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/program" element={<ProgramPage />} />
+          <Route path="/contact-us" element={<ContactUs/>}/>
         </Routes>
         <Footer />
       </div>
