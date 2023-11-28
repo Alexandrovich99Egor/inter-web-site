@@ -14,6 +14,7 @@ import Footer from "./component/footer/footer.jsx";
 import OurProgram from "./component/section-for-parents/forParents.jsx";
 import Slider from "./component/slider/slider.jsx";
 import ContactUs from "./component/contacts-us/contact-us";
+import PopUpTel from "./component/pop-up-tel/pop-up-tel.jsx";
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
+        <PopUpTel />
       </div>
     </>
   );

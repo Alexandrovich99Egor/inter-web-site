@@ -40,7 +40,9 @@ function Header() {
         <header className="header">
             <div className="container header__container">
                 <div className="header__logo">
-                    <img className="header__logo-item" src={Logo} alt="" />
+                    <a href="/">
+                        <img className="header__logo-item" src={Logo} alt="" />
+                    </a>
                 </div>
                 <div className="header__contacts">
                     <ul className="contacts__list">

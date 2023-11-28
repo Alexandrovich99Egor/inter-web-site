@@ -1,0 +1,101 @@
+@import '../varible.scss';
+
+.content {
+    background-color: $ColorGreen;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 100px;
+    border: 5px solid $ColorWhite;
+    background: url(../image/png-clipart-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: shake 2s infinite;
+    cursor: pointer;
+
+    button {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    &:hover~.content-text {
+        opacity: 1;
+
+    }
+}
+
+.content-text {
+    background-color: $ColorGreen;
+    position: fixed;
+    left: 1%;
+    bottom: 12%;
+    z-index: 100;
+    color: $ColorWhite;
+    padding: 50px;
+    border-radius: 20px;
+    border: 5px solid $ColorWhite;
+    opacity: 0;
+    transition: 0.7s;
+    animation: show 5s infinite;
+}
+
+.modal__window-call {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    padding: 100px 10px;
+    transform: translate(-50%, -50%);
+    background-color: $ColorWhite;
+    z-index: 100;
+    border-radius: 20px;
+
+    .modal__form {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width:500px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div {
+            input {
+                outline: none;
+                border: none;
+                padding: 15px 5px;
+                font-size: 18px;
+                border-radius: 20px;
+                text-align: center;
+                background: $ColorGrey;
+            }
+        }
+    }
+}
+
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: rotate(0deg)
+    }
+
+    25%,
+    75% {
+        transform: rotate(20deg)
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
