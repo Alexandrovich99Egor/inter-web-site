@@ -30,6 +30,13 @@
             flex-direction: column;
             gap: 10px;
 
+            .list-item {
+                .item-link {
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+
             @media (max-width:1200px) {
                 display: none;
             }
@@ -61,12 +68,14 @@
         .item-link {
             color: $ColorBlack;
             font-family: $HeaderFontFamily;
-            font-size: 16px;
-            font-weight: 200;
+            font-size: 17px;
+            font-weight: 500;
 
             &:hover {
                 color: $ColorGreen;
-                transition: all 0.3s;
+                transition: all 0.1s;
+                border-bottom: 3px solid $ColorGreen;
+
             }
         }
     }
@@ -91,7 +100,6 @@
             text-align: center;
             height: 0vh;
 
-
             nav {
                 display: flex;
                 flex-direction: column;
@@ -105,6 +113,7 @@
                     .item-link {
                         font-size: 20px;
                         color: $ColorBlack;
+                        font-weight: 800;
                     }
                 }
             }

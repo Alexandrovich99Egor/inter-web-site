@@ -3,26 +3,110 @@
 
 
 .contact-us {
+  background-color: $ColorBackGround;
   margin-top: 15px;
-  height: calc(100vh - $HeaderHeigth);
+
 
   &__container {
     padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: space-between;
 
+    @media (max-width:1000px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .contact-us__content {
+      margin-top: 400px;
+
+      @media (max-width:1000px) {
+        margin-top: 10px;
+      }
+
+      .contact-us__title {
+        text-align: left;
+        font-size: 50px;
+
+        @media (max-width:1000px) {
+          text-align: center;
+        }
+
+        span {
+          color: $ColorGreen;
+          font-size: 60px;
+        }
+      }
+
+      .contact-us__social {
+
+        .contact-us__sub-title {
+          font-size: 34px;
+          line-height: 70px;
+        }
+
+        img {
+          width: 30px;
+        }
+      }
+    }
 
   }
 
-  &__title {
-    font-size: 35px;
-  }
 
-  &__social {
-    display: flex;
+  &__form {
+    background-color: $ColorWhite;
+    padding: 100px 15px;
+    border-radius: 20px;
+    border: 2px solid $ColorGreen;
+    max-width: 60%;
 
-    img {
-      width: 30px;
+    @media (max-width:1000px) {
+      margin-top: 10px;
+      max-width: 100%;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      input {
+        padding: 20px 15px;
+        font-size: 25px;
+        border-radius: 20px;
+        border: none;
+        width: 80%;
+        outline: none;
+
+        &:focus {
+          border: 2px solid $ColorGreen;
+        }
+      }
+
+      .contact-us__form-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .contact-us__form-btn {
+          margin-top: 50px;
+          width: 85%;
+        }
+      }
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 40px;
+
+      span {
+        color: $ColorGreen;
+      }
     }
   }
 

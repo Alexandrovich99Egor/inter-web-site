@@ -11,6 +11,7 @@ function PopUpTel() {
     }
     return (
         <>
+            <div className={`modal__overlay ${show ? 'active' : ''}`}></div>
             <div className="content">
                 <button onClick={ShowText}>
                 </button>
