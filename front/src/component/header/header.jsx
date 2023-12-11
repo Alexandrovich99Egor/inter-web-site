@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 import './header.scss';
 import Logo from '../image/header-logo.jpg'
 // pages import
@@ -17,6 +17,10 @@ function Header() {
     const OpenMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+    // close Menu when click link
+    const CloseMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
     // transform span for menu
     const SpanTransform = () => {
         setdefaultState(!defaultState);
@@ -31,6 +35,8 @@ function Header() {
     const closeClick = () => {
         setOpen(false);
     }
+
+    // for close menu
 
 
 
@@ -108,32 +114,32 @@ function Header() {
                 <div className="header__container-mobile container">
                     <nav>
                         <li className="nav-list-item">
-                            <Link className="item-link" to="/">Головна</Link>
+                            <Link onClick={CloseMenu} className="item-link" to="/">Головна</Link>
                         </li>
                         <li className="nav-list-item">
-                            <Link className="item-link" to="/about-us">Про нас</Link>
+                            <Link onClick={CloseMenu} className="item-link" to="/about-us">Про нас</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Про нас</a>
+                            <Link onClick={CloseMenu} className="item-link" to="/program">Наша програма</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Батькам </a>
+                            <Link onClick={CloseMenu} className="item-link" to="/for-parents">Батькам </Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Відгуки </a>
+                            <Link onClick={CloseMenu} className="item-link" to="/feedback">Відгуки </Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Контакти</a>
+                            <Link onClick={CloseMenu} className="item-link" to="/contact-us">Контакти</Link>
                         </li>
 
                         <li className="nav-list-item">
-                            <a className="item-link" href="">(095)186-01-78</a>
+                            <a className="item-link" href="tel:(095)186-01-78">(095)186-01-78</a>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">(095)186-01-78</a>
+                            <a className="item-link" href="tel:(095)186-01-78">(095)186-01-78</a>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">(095)186-01-78</a>
+                            <a className="item-link" href="tel:(095)186-01-78">(095)186-01-78</a>
                         </li>
                         <Button
                             textContentBtn={'Записатись'}

@@ -3,6 +3,8 @@ import './footer.scss';
 import FooterLogo from '../image/header-logo.jpg';
 import FooterInsta from '../image/instagram-.png';
 import FooterFacebook from '../image/fcbk.svg';
+import { Routes, Route, Link, NavLink } from "react-router-dom";
+
 
 
 
@@ -19,22 +21,25 @@ function Footer() {
                 <nav className="footer__nav">
                     <ul className="footer__nav-list">
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Програма</a>
+                            <Link className="item-link" to="/">Головна</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Про нас</a>
+                            <Link className="item-link" to="/program">Програма</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Наші учні</a>
+                            <Link className="item-link" to="/about-us">Про нас</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Батькам</a>
+                            <Link className="item-link" to="/program">Наша програма</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Відгуки</a>
+                            <Link className="item-link" to="/for-parents">Батькам</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="item-link" href="">Контакти</a>
+                            <Link className="item-link" to="/feedback">Відгуки</Link>
+                        </li>
+                        <li className="nav-list-item">
+                            <Link className="item-link" to="/contact-us">Контакти</Link>
                         </li>
                     </ul>
                 </nav>

@@ -58,9 +58,6 @@ function Slider({ dataSlider }) {
                             <p className='slider__sub-title'>
                                 {item.discriotion}
                             </p>
-                            <div className='slider__image'>
-                                <img className='slide__image-item' src={item.image} alt="" />
-                            </div>
                             <div className='slider__button'>
                                 <Button
                                     onClick={openClick}

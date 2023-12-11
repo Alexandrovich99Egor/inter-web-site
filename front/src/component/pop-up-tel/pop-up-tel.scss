@@ -2,12 +2,13 @@
 
 
 .modal__overlay {
-    position: absolute;
+    z-index: 20;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 5, 0.7);
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     display: none;
 }
 
@@ -46,6 +47,7 @@
 }
 
 .content-text {
+    pointer-events: none;
     background-color: $ColorGreen;
     position: fixed;
     left: 1%;
@@ -58,6 +60,10 @@
     opacity: 0;
     transition: 0.7s;
     animation: show 5s infinite;
+
+    @media(max-width:500px) {
+        display: none;
+    }
 }
 
 .modal__window-call {
@@ -72,19 +78,52 @@
     z-index: 100;
     border-radius: 20px;
 
+    @media (max-width:500px) {
+        width: 80%;
+    }
+
+    .modal__window-btn {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .modal__form {
         display: flex;
         gap: 10px;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+
+        .modal__window-close {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: $ColorGreen;
+            border: 2px solid $ColorWhite;
+            position: absolute;
+            right: -5%;
+            top: -5%;
+            border-radius: 100%;
+            cursor: pointer;
+        }
 
         @media (max-width:500px) {
             display: flex;
             flex-direction: column;
         }
 
+        p {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 70px;
+        }
+
         div {
             input {
+                width: 100%;
                 outline: none;
                 border: none;
                 padding: 15px 5px;

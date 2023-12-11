@@ -10,12 +10,12 @@ import User3 from '../image/sofa-682x1024.jpg';
 import UserFeedback from '../image/14.jpg';
 import UserFeedback2 from '../image/18.jpg';
 import UserFeedback3 from '../image/52.jpg';
-import UserFeedback4 from '../image/58.jpg';
-import UserFeedback5 from '../image/62.jpg';
-import UserFeedback6 from '../image/64.jpg';
+import UserFeedback4 from '../image/avatar4.jpg';
+import UserFeedback5 from '../image/avatar39.jpg';
+import UserFeedback6 from '../image/avatar3.jpg';
 import UserFeedback7 from '../image/74.jpg';
 import UserFeedback8 from '../image/9.jpg';
-
+import UserFeedback9 from '../image/avatar2.jpg';
 
 
 
@@ -135,7 +135,7 @@ export const dataFeedBack = [
     {
         Name: 'Ірина, 40 років:',
         Discriotion: '"Син захоплюється навчанням в Inter-Web. Я вражена, як він легко оволодіває різними технологіями - від HTML до MySQL. Професійні викладачі роблять свою справу чудово!"',
-        Avatar: UserFeedback8
+        Avatar: UserFeedback9
     },
     {
         Name: 'Владислав, 17 років:',

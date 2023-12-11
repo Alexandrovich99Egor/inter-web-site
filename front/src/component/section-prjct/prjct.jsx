@@ -37,10 +37,13 @@ function Prjcts() {
 
                     </h3>
                     <div>
-                        <Button
-                            classNameBtn={'project-btn'}
-                            textContentBtn={'Переглянути всю программу'}
-                        />
+                        <a href="/program">
+                            <Button
+                                classNameBtn={'project-btn'}
+                                textContentBtn={'Переглянути всю программу'}
+                            />
+                        </a>
+
                     </div>
 
                 </div>
