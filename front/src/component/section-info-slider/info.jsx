@@ -33,6 +33,9 @@ function Info() {
                 <h2 className="info__title">
                     Підтримуйте мрії, розвивайте навички: інноваційна <span>InterWeb</span> школа для молодих майстрів технологій!
                 </h2>
+                <h3>
+                    Не можете обрати напрямок? Ми допоможемо визначитись на <span> безкоштовному пробному уроці.</span>
+                </h3>
                 <div className='info__programs'>
                     {data.map(item => (
                         <div className='info__content' key={item.id}>

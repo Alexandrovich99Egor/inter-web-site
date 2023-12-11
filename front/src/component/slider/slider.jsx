@@ -25,21 +25,17 @@ function Slider({ dataSlider }) {
         setOpen(false);
     }
 
-
-
-
     return (
         <>
-
             {/* Передаю данные для меню,закрыть открыть */}
             <Menu PropsModal={open} PropsModalSet={closeClick} />
             <Swiper
                 slidesPerView={3}
-                spaceBetween={50}
+                spaceBetween={15}
                 freeMode={true}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 3000,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -71,11 +67,8 @@ function Slider({ dataSlider }) {
                                     classNameBtn={'slider__btn'}
                                     textContentBtn={'Записатись на безоплатный урок'}
                                 />
-
                             </div>
                         </div>
-
-
 
                     </SwiperSlide>
                 ))}

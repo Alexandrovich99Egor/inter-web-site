@@ -1,8 +1,21 @@
 @import '../varible.scss';
 
 .info {
-    margin-top: 100px;
+    background-color: $ColorBackGround;
     padding: 100px 0px;
+
+    &__container {
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+
+            span {
+                color: $ColorGreen;
+                font-size: 35px;
+            }
+        }
+    }
 
     &__title {
         text-align: center;
@@ -13,6 +26,8 @@
             color: $ColorGreen;
             font-size: 50px;
         }
+
+
     }
 
     &__image-slider {
